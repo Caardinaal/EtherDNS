@@ -1,13 +1,14 @@
 <div align="center">
 
-# EtherDNS
+# A Fork of EtherDNS
 
 **A modern DNS changer and network toolkit for Windows.**
 
 Switch between 48 verified DNS servers in one click, benchmark them from your own connection,
 see your public IP, reset your network and recover saved Wi-Fi passwords, all in one app.
 
-[![Platform](https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-0078D6?logo=windows&logoColor=white)](#requirements)
+![Platform](https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-0078D6?logo=windows&logoColor=white)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-%23E95420.svg)
 [![.NET](https://img.shields.io/badge/.NET-9.0-512BD4?logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
 [![UI](https://img.shields.io/badge/UI-WPF-5B8CFF)](#tech-stack)
 [![License](https://img.shields.io/badge/license-MIT-34D399)](LICENSE)
@@ -80,6 +81,7 @@ Every server below was checked to answer DNS queries before being added.
 | **Ad Block** | AdGuard, Control D Ad-Free, dnsforge |
 | **Security** | Cloudflare Security, CleanBrowsing Security, Comodo Secure, Control D Malware, SafeDNS, Yandex Safe |
 | **Family** | Cloudflare Family, AdGuard Family, OpenDNS FamilyShield, CleanBrowsing Family, CleanBrowsing Adult, Yandex Family, Control D Family |
+and More
 
 Addresses live in [`Core/DnsCatalog.cs`](Core/DnsCatalog.cs). Adding a server takes one line.
 
@@ -93,9 +95,9 @@ Addresses live in [`Core/DnsCatalog.cs`](Core/DnsCatalog.cs). Adding a server ta
 - **Windows 10 or 11, 64-bit**
   - The glass effect needs Windows 11 22H2 or newer; older versions get a solid theme.
 - **Administrator rights** to change DNS, flush the cache or renew the IP. The app asks for them when it starts.
-
 The installer ships its own .NET runtime, so **you don't need to install .NET**.
-
+- - **Ubuntu**
+ ...
 ---
 
 ## Installation
@@ -109,8 +111,9 @@ To uninstall, use **Settings → Apps → Installed apps → EtherDNS**.
 > **"Windows protected your PC"?** The installer isn't code-signed, so SmartScreen may warn you on first run.
 > Click **More info → Run anyway** to continue.
 
+## For Ubuntu
+> sudo dpkg -i etherdns_2.2.0_all.deb
 ---
-
 ## Build from source
 
 ### Prerequisites
@@ -125,7 +128,7 @@ To uninstall, use **Settings → Apps → Installed apps → EtherDNS**.
 ### Clone
 
 ```bash
-git clone https://github.com/DevURANIUM/EtherDNS.git
+git clone https://github.com/Caardinaal/EtherDNS.git
 cd EtherDNS
 ```
 
@@ -250,3 +253,5 @@ If EtherDNS is useful to you, a ⭐ on GitHub helps a lot. You can also support 
 ## License
 
 Released under the [MIT License](LICENSE). Copyright © DevUranium.
+
+**Full Changelog**: https://github.com/Caardinaal/EtherDNS/compare/2.0.0...2.1.0
