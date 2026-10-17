@@ -11,7 +11,7 @@
 [![DNS Servers](https://img.shields.io/badge/Verified_DNS-87%2B_Servers-success.svg)](#)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-[English](#-overview) • [ویژگی‌ها و راهنمای فارسی](#-معرفی-و-راهنمای-فارسی) • [Download (Releases)](../../releases)
+[English](#-overview) • [ویژگی‌ها و راهنمای فارسی](../../README_FA.md) • [Download (Releases)](../../releases)
 
 </div>
 
