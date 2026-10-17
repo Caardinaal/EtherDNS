@@ -1,257 +1,92 @@
+Markdown
 <div align="center">
 
-# A Fork of EtherDNS
+# 🌐 EtherDNS
 
-**A modern DNS changer and network toolkit for Windows.**
+**Modern Cross-Platform DNS Changer & Network Toolkit**  
+*Available for Windows, Ubuntu / Debian Linux, and Android*
 
-Switch between 48 verified DNS servers in one click, benchmark them from your own connection,
-see your public IP, reset your network and recover saved Wi-Fi passwords, all in one app.
+[![Version](https://img.shields.io/badge/Version-2.3.0-blue.svg)](#)
+[![Platforms](https://img.shields.io/badge/Platform-Windows%20%7C%20Ubuntu%20%7C%20Android-indigo.svg)](#)
+[![DNS Servers](https://img.shields.io/badge/Verified_DNS-87%2B_Servers-success.svg)](#)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-![Platform](https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-0078D6?logo=windows&logoColor=white)
-![Ubuntu](https://img.shields.io/badge/Ubuntu-%23E95420.svg)
-[![.NET](https://img.shields.io/badge/.NET-9.0-512BD4?logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
-[![UI](https://img.shields.io/badge/UI-WPF-5B8CFF)](#tech-stack)
-[![License](https://img.shields.io/badge/license-MIT-34D399)](LICENSE)
-[![Release](https://img.shields.io/github/v/release/DevURANIUM/EtherDNS?color=6366F1)](https://github.com/DevURANIUM/EtherDNS/releases/latest)
-
-[**Download**](https://github.com/DevURANIUM/EtherDNS/releases/latest) ·
-[Features](#features) ·
-[DNS list](#dns-servers) ·
-[Build from source](#build-from-source) ·
-[Support](#support--donations)
-
-<br/>
-
-<img src="docs/screenshots/overview.png" alt="EtherDNS overview" width="860"/>
+[English](#-overview) • [ویژگی‌ها و راهنمای فارسی](#-معرفی-و-راهنمای-فارسی) • [Download (Releases)](../../releases)
 
 </div>
 
 ---
 
-## Features
+## ✨ Overview
 
-### Network Overview
-- Live status of the active adapter: **DNS provider, local IP, gateway, link speed, DNS mode** (static or DHCP)
-- Pick which adapter to manage (Wi-Fi, Ethernet, …)
-- **Live DNS monitor**: response time of your current DNS, measured every few seconds and drawn as a chart
-- Quick actions: **Flush DNS**, **Renew IP**, **Network Reset**, **Remove DNS**, **Speed Test**
-
-### DNS Servers
-- **48 verified DNS servers** organized into groups: Iranian, Global, Privacy, Ad Block, Security, Family
-- **Gaming** filter, search by name or IP, and grouped or speed-ranked views
-- **Speed test** for every server: sends real DNS queries over UDP (more accurate than ping, which many resolvers block)
-- One-click **Apply**, plus **Custom DNS** for any primary/secondary pair you want
-- **Remove DNS**: clear manual DNS (IPv4 + IPv6) from the selected adapter, or from **all adapters** at once
-- The DNS you're currently using is highlighted; the fastest one is marked after a test
-
-### IP Info
-- Your **public IP** with country, region, city, ISP, organization, ASN, timezone and coordinates
-- Show it on a map, or copy the IP / all details with one click
-- Refreshes automatically when your connection changes (e.g. a VPN connects)
-- Local network details: adapter, local IP, gateway, MAC address, DNS servers
-
-### Wi-Fi
-- Every Wi-Fi network this PC has saved, with its security type
-- Show, hide or copy a saved password
-
-### Automatic updates
-- Checks [GitHub Releases](https://github.com/DevURANIUM/EtherDNS/releases) at startup and shows an **Update** badge when a new version is out
-- **About → Software Update** shows what's new and installs the update in one click: it downloads the installer, verifies its SHA-256, installs it silently and restarts EtherDNS
-- Downloads resume automatically if the connection drops
-
-### Design
-- Dark **glass** interface using the native Windows 11 acrylic effect
-- Rounded window with the system shadow, smooth animations and toast notifications
-
-<div align="center">
-<img src="docs/screenshots/dns-servers.png" alt="DNS servers" width="860"/>
-</div>
+**EtherDNS** is a fast, modern, and lightweight DNS changer and network utility designed for **Windows**, **Ubuntu Linux**, and **Android**. It allows you to switch between **87+ verified Iranian and Global DNS servers** in one click, add and save your own custom DNS servers, benchmark real-world DNS resolution speeds over **UDP/53**, inspect your public IP & ASN details, and manage saved Wi-Fi networks.
 
 ---
 
-## DNS servers
+## 🚀 Key Features
 
-Every server below was checked to answer DNS queries before being added.
-
-| Group | Servers |
-|---|---|
-| **Iranian** | Shecan, Begzar, Electro, Radar Game, 403.online, Dynx.pro, Private IP, Vanilla, TCI, AsiaTech, Shatel, Pishgaman, Mobinnet, ParsOnline, Sabanet, Taknet, Zi-Tel |
-| **Global** | Google, Cloudflare, OpenDNS, Level3, Level3 Alt, Quad9 ECS, UltraDNS, Gcore, Yandex |
-| **Privacy** | Quad9, Quad9 Unfiltered, DNS.SB, NextDNS, Control D, AdGuard Unfiltered |
-| **Ad Block** | AdGuard, Control D Ad-Free, dnsforge |
-| **Security** | Cloudflare Security, CleanBrowsing Security, Comodo Secure, Control D Malware, SafeDNS, Yandex Safe |
-| **Family** | Cloudflare Family, AdGuard Family, OpenDNS FamilyShield, CleanBrowsing Family, CleanBrowsing Adult, Yandex Family, Control D Family |
-and More
-
-Addresses live in [`Core/DnsCatalog.cs`](Core/DnsCatalog.cs). Adding a server takes one line.
-
-> **Note:** some Iranian DNS servers (e.g. the `10.x.x.x` ones) only work on Iranian networks.
-> Run **Test All Speeds** to see which ones answer on your connection.
+* **87+ Verified Public & Private DNS Servers:**
+  * **Iranian Anti-Sanction & Gaming (30 Servers):** Shecan, Shecan Pro, Electro, Radar Game, 403.online, Begzar, Dynx.pro, Vanilla, Hostiran, Beshkan, Shelter, Asrez Game, and all major Iranian ISPs (TCI/Mokhaberat, AsiaTech, Shatel, Pishgaman, Mobinnet, ParsOnline, Irancell, MCI, Rightel, HiWEB, etc.).
+  * **Global, Privacy, AdBlock, Security & Family (57 Servers):** Cloudflare, Google, Quad9, OpenDNS, NextDNS, Control D, AdGuard, Mullvad, RethinkDNS, LibreDNS, DNS.SB, DNS.Watch, Verisign, Hurricane Electric, Level3, UltraDNS, Gcore, Yandex, CIRA Shield, DNS4EU, Comodo, CleanBrowsing, and SafeDNS.
+* **Custom DNS Manager:** Add your own DNS servers with a custom name, primary/secondary IPv4 addresses, and category. Saved servers persist across restarts and participate in speed benchmarks.
+* **Parallel UDP/53 Speed Benchmark:** Measures actual DNS query resolution time (not just ICMP ping) across all 87+ servers simultaneously using multi-threaded sockets.
+* **Live DNS Latency Monitor:** Real-time response time tracking and graphing of your currently active DNS server.
+* **Public IP & Local Network Inspector:** Displays your public IPv4/IPv6, Country, City, ISP, Organization, ASN, Timezone, Coordinates, Local IP, Gateway, and MAC address.
+* **One-Click Network Toolkit (Desktop):** Flush DNS cache, renew DHCP IP lease, reset network adapters, and view saved Wi-Fi passwords.
+* **Responsive Matte Dark UI:** Clean, distraction-free dark interface with proportional scaling cards and 8-way window resizing on desktop.
 
 ---
 
-## Requirements
+## 💻 Platform Highlights
 
-- **Windows 10 or 11, 64-bit**
-  - The glass effect needs Windows 11 22H2 or newer; older versions get a solid theme.
-- **Administrator rights** to change DNS, flush the cache or renew the IP. The app asks for them when it starts.
-The installer ships its own .NET runtime, so **you don't need to install .NET**.
-- - **Ubuntu**
- ...
+| Platform | Technology Stack | How DNS is Applied | Key Capabilities |
+| :--- | :--- | :--- | :--- |
+| **Windows** | C# / .NET 9 (WPF) | Native `netsh` / WMI | Full desktop toolkit, Wi-Fi password recovery, live latency chart |
+| **Ubuntu / Debian** | Python 3 / PyQt6 & PyQt5 | `nmcli` + `resolvectl` + `pkexec` | Native `.deb` package, 8-way frameless resize, responsive grid, `sudo` GUI support |
+| **Android** | Native Android Java SDK | Local `VpnService` (TUN UDP/53 Forwarder) | **No Root required**, 24-thread instant speed test (~1.5s), foreground status notification |
+
 ---
 
-## Installation
+## 📦 Installation & Build Guide
 
-1. Download the installer (`.exe`) from the [latest release](https://github.com/DevURANIUM/EtherDNS/releases/latest).
-2. Run the installer and follow the steps. You can add a desktop shortcut.
-3. Start **EtherDNS** from the Start menu and accept the administrator prompt.
+### 1. Ubuntu / Debian Linux (`.deb`)
 
-To uninstall, use **Settings → Apps → Installed apps → EtherDNS**.
-
-> **"Windows protected your PC"?** The installer isn't code-signed, so SmartScreen may warn you on first run.
-> Click **More info → Run anyway** to continue.
-
-## For Ubuntu
-> sudo dpkg -i etherdns_2.2.0_all.deb
----
-## Build from source
-
-### Prerequisites
-
-- [.NET 9 SDK](https://dotnet.microsoft.com/download/dotnet/9.0)
-- [Inno Setup 6](https://jrsoftware.org/isinfo.php), only needed to build the installer:
-
-  ```bash
-  winget install JRSoftware.InnoSetup
-  ```
-
-### Clone
-
+**Option A — Install prebuilt `.deb` package:**
 ```bash
-git clone https://github.com/Caardinaal/EtherDNS.git
-cd EtherDNS
-```
+sudo apt install ./etherdns_2.2.0_all.deb
+Option B — Build & install automatically from script:
 
-### Run in development
+Bash
+chmod +x install-etherdns-ubuntu.sh
+sudo ./install-etherdns-ubuntu.sh
+Run application: Launch EtherDNS from your application menu or run sudo etherdns in the terminal.
 
-The app needs administrator rights, so run this from an **elevated** terminal (*Run as administrator*):
+Uninstall: Run etherdns --uninstall.
 
-```bash
-dotnet run
-```
+2. Android (.apk)
+Option A — Install APK directly:
+Download EtherDNS-v2.3.0-Android.apk from the [suspicious link removed] section and install it on your phone (Android 6.0+).
 
-To work on the UI from a normal terminal, build it without the admin requirement (DNS changes won't work in this mode):
+Option B — Build signed APK on Ubuntu (Zero-Gradle Instant Builder):
+Compile a signed APK in under 5 seconds on Ubuntu without needing Android Studio or Gradle:
 
-```bash
-dotnet run -p:NoAdmin=true
-```
+Bash
+chmod +x build-android-ubuntu.sh
+sudo ./build-android-ubuntu.sh
+The signed EtherDNS-v2.3.0-Android.apk will be generated in the current directory and copied to your Desktop.
 
-### Build the installer
+3. Windows (.exe)
+Option A — Install Setup .exe:
+Download and run EtherDNS-Setup-2.2.0.exe from the [suspicious link removed] page.
 
-```bash
-powershell -ExecutionPolicy Bypass -File build.ps1
-```
+Option B — Build from source on Windows:
+Requires .NET 9 SDK and Inno Setup 6. Run in PowerShell:
 
-This publishes a self-contained `win-x64` build to `publish/` and creates the installer at
-`dist/EtherDNS-Setup-<version>.exe`. To publish without building an installer, add `-SkipInstaller`.
+PowerShell
+powershell -ExecutionPolicy Bypass -File .\update-and-build.ps1
+The installer will be created at dist\EtherDNS-Setup-2.2.0.exe.
 
----
+👨‍💻 Credits & License
+Original Project & Concept: DevUranium
 
-## How it works
-
-| Feature | Under the hood |
-|---|---|
-| Set / remove DNS | `netsh interface ipv4/ipv6 set dnsservers …` on the selected adapter |
-| Flush DNS / Renew IP | `ipconfig /flushdns`, `ipconfig /renew "<adapter>"` (only the selected adapter, with a timeout) |
-| Active DNS & mode | `System.Net.NetworkInformation` + the adapter's `NameServer` registry value |
-| Speed test | A raw DNS `A` query over UDP/53, best of several attempts |
-| Public IP | [ipwho.is](https://ipwho.is), falling back to [ipinfo.io](https://ipinfo.io), then [ip-api.com](https://ip-api.com) |
-| Wi-Fi passwords | `netsh wlan show profile name="…" key=clear` |
-| Updates | GitHub's `releases/latest` API; the installer is checked against the SHA-256 GitHub reports, then run with `/SILENT` |
-
-### Privacy
-- **Wi-Fi passwords** are read from your own PC and never leave it.
-- The **IP Info** page sends a request to the IP lookup services above, so they see your public IP. This only happens when you open that page or press Refresh.
-- At startup EtherDNS asks **GitHub** whether a newer release exists. Nothing about you or your network is sent.
-- EtherDNS has no telemetry, accounts or analytics.
-
----
-
-## Tech stack
-
-- **C# / .NET 9**, **WPF**, no third-party packages
-- Native Windows 11 window effects through DWM (dark title, rounded corners, acrylic backdrop)
-- Installer built with **Inno Setup 6**
-
-```
-EtherDNS/
-├── App.xaml / MainWindow.xaml   # shell: sidebar, navigation, toasts, dialogs
-├── Core/                        # logic: DNS catalog, network, DNS probe, IP lookup, Wi-Fi, clipboard
-├── Views/                       # pages: Overview, DNS Servers, IP Info, Wi-Fi, About
-├── Themes/Theme.xaml            # colors, styles and control templates
-├── installer/                   # Inno Setup script + installer artwork
-├── legacy/                      # the original console version (v1.2), for reference
-└── build.ps1                    # publish + installer
-```
-
----
-
-## Changelog
-
-### v2.1.0
-- New: **automatic updates**. EtherDNS checks GitHub for new versions and updates itself in one click from **About → Software Update** (verified download, silent install, automatic restart)
-
-### v2.0.0
-- Rewritten from a console app as a full **graphical app** with a Windows installer
-- Grew the list from 19 to **48 verified DNS servers**, organized into groups
-- New: real **DNS speed test**, **live DNS monitor**, **IP Info** page, **Remove DNS from all adapters**
-- Fixed: **Network Reset** no longer hangs on PCs with VPN or virtual adapters (it renews only the selected adapter, with a timeout)
-- Fixed: copying no longer fails when clipboard history is turned on
-
-### v1.2
-- Console version with the original 19 DNS servers. Its source is in [`legacy/`](legacy/).
-
----
-
-## Contributing
-
-Issues and pull requests are welcome.
-
-- Found a bug or have an idea? [Open an issue](https://github.com/DevURANIUM/EtherDNS/issues).
-- Know a reliable DNS server that's missing? Add it to [`Core/DnsCatalog.cs`](Core/DnsCatalog.cs) and open a PR.
-
----
-
-## Support & Donations
-
-If EtherDNS is useful to you, a ⭐ on GitHub helps a lot. You can also support development:
-
-| Coin | Address |
-|---|---|
-| **BTC** | `bc1qcclcp574hnznm0nmdzzf0ta7366svjskttqks3` |
-| **LTC** | `ltc1qcrkelw38gjrmg0ptjy2nshqej622kp76het7q0` |
-| **XRP** | `rPoK5SBChFPqEiQv1W97LW6FKoJZLipDVQ` |
-| **XLM** | `GDMUQREEZNBSTQOT5BV7MYEMXJFV3CYRZXUVOYCTIUZTHUWPHLVASFVD` |
-| **TON** | `UQAJH2N0pqpvC9YN841w5NH1dCN9Lakwkpjvoy7vXf-vfqgv` |
-| **TRON** | `TXJqhhwvkrTdnf5HReZf55hEzZuxjto3R4` |
-| **USDT (BEP20)** | `0x1591036c4bD05b046532B65Df939fcd7824E18c7` |
-
----
-
-## Developer
-
-<img src="docs/screenshots/about.png" alt="About" width="520" align="right"/>
-
-**DevUranium**
-
-- Telegram: [t.me/DevRouter](https://t.me/DevRouter)
-- GitHub: [github.com/DevURANIUM](https://github.com/DevURANIUM)
-- Email: [info@heydari.org](mailto:info@heydari.org)
-
-<br clear="right"/>
-
-## License
-
-Released under the [MIT License](LICENSE). Copyright © DevUranium.
-
-**Full Changelog**: https://github.com/Caardinaal/EtherDNS/compare/2.0.0...2.1.0
+License: Released under the MIT License.
